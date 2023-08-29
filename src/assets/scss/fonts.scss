@@ -1,0 +1,26 @@
+/** Fonts basic */
+$openSans: 'Open Sans';
+
+/* Fonts size system */
+
+$f1: 32px;
+$f2: 25px;
+$f3: 18px;
+$f4: 16px;
+$f5: 14px;
+$f6: 12px;
+$f7: 10px;
+
+/* Fonts */
+
+$font_path: '~@/assets/fonts/';
+
+@font-face {
+  font-family: $openSans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('Open-Sans'),
+    url($font_path + '/opensans-regular.woff2') format('woff2'),
+    url($font_path + '/opensans-regular.woff') format('woff'),
+    url($font_path + '/opensans-regular.ttf') format('truetype');
+}
